@@ -1,15 +1,23 @@
-<header><a href="games.html">games</a></header>
- <link rel="stylesheet" href="styles.css">
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>hackrize</title>
+    <link rel="stylesheet" href="styles.css">
 </head>
 <body>
+    <header><a href="games.html">games</a></header>
     <div class="container">
         <h1 class="giant-word" id="hack">hack</h1>
     </div>
- <script>
-  const h2BackForthEl = document.getElementById=('hack")
-   rotateIntervalId = setInterval(() => {
-    degrees += 1;
-    h2BackForthEl.style.transform = `rotate3D(1,1,1, ${degrees}deg)`;
-  }, 5);
- </script>
+    <script>
+        const h2BackForthEl = document.getElementById('hack');
+        let degrees = 0;
+        const rotateIntervalId = setInterval(() => {
+            degrees += 1;
+            h2BackForthEl.style.transform = `rotate3D(1, 1, 1, ${degrees}deg)`;
+        }, 5);
+    </script>
 </body>
+</html>
